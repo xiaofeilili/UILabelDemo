@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ImageLabel.h"
 #import "FitLabel.h"
+#import "EdgeLabel.h"
 
 @interface ViewController ()
 
@@ -93,7 +94,10 @@
     //  } UIBaselineAdjustment;
     label.enabled = YES;   //默认为YES //只是决定了Label的绘制方式，将它设置为NO将会使文本变暗，表示它没有激活，这时向它设置颜色值是无效的。
     
-    
+    EdgeLabel *eLbl = [[EdgeLabel alloc] initWithFrame:CGRectMake(20, 600, 100, 30)];
+    eLbl.text = @"xiaojd";
+    eLbl.backgroundColor = [UIColor cyanColor];
+    [self.view addSubview:eLbl];
 }
 
 //编辑我要分期下面一排字
