@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ImageLabel.h"
+#import "FitLabel.h"
 
 @interface ViewController ()
 
@@ -26,27 +28,13 @@
     
     /** label中添加图片*/
     UIImage *image = [UIImage imageNamed:@"banner.png"];
-    NSTextAttachment *textAttach = [[NSTextAttachment alloc] init];
-    textAttach.image = image;
-    
-    NSAttributedString *attriAtr = [NSAttributedString attributedStringWithAttachment:textAttach];
-    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 200, 100)];
-    label1.attributedText = attriAtr;
-    [self.view addSubview:label1];
-    
+    ImageLabel *iLbl = [[ImageLabel alloc] initWithFrame:CGRectMake(20, 20, 200, 100)];
+    iLbl.image = image;
+    [self.view addSubview:iLbl];
     /** label高度自适应*/
     NSString *str = @"ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;";
-    //CGSize labelSize = [str sizeWithFont:font constrainedToSize:CGSizeMake(self.view.frame.size.width-40, 1000) lineBreakMode:NSLineBreakByTruncatingTail];
-    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:18]};
-    /*
-     * size  宽高限制，用于计算文本绘制时占据的矩形块
-     * options  文本绘制时的附加选项。
-     * context  上下文，包括一些信息，例如如何调整字间距以及缩放。最终，该对象包含的信息将用于文本绘制。该参数可为 nil
-     */
-    CGSize labelSize = [str boundingRectWithSize:CGSizeMake(self.view.frame.size.width-40, 1000) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil].size;
     
-    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(20, 120, labelSize.width, labelSize.height)];
-    label2.numberOfLines = 0;
+    FitLabel *label2 = [[FitLabel alloc] initWithFrame:CGRectMake(20, 120, 300, 10)];
     label2.backgroundColor = [UIColor cyanColor];
     label2.font = [UIFont systemFontOfSize:18];
     label2.text = str;
@@ -75,16 +63,13 @@
     label4.shadowOffset = CGSizeMake(1, 0);
     [self.view addSubview:label4];
     
-    /** label上字体颜色不同*/
+    /** label上字体颜色不同  富文本*/
     UILabel *label5 = [[UILabel alloc] initWithFrame:CGRectMake(20, 350, self.view.frame.size.width-40, 50)];
     label5.backgroundColor = [UIColor cyanColor];
     label5.textAlignment = 1;
     [label5 setAttributedText:[self createAttrString]];
     [self.view addSubview:label5];
     
-    /** */
-    UILabel *label6 = [[UILabel alloc] initWithFrame:CGRectMake(20, 440, self.view.frame.size.width - 40, 100)];
-    [self.view addSubview:label6];
     
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 400, self.view.frame.size.width-40, 50)];
