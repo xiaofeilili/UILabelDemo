@@ -11,6 +11,7 @@
 		2724DC8620B7A91F00B92542 /* ImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724DC8520B7A91F00B92542 /* ImageLabel.m */; };
 		2724DC8920B7AAF300B92542 /* FitLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724DC8820B7AAF300B92542 /* FitLabel.m */; };
 		2724DC8C20B7AE0F00B92542 /* EdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724DC8B20B7AE0F00B92542 /* EdgeLabel.m */; };
+		2724DD9920CE1B0000B92542 /* IrregularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724DD9820CE1B0000B92542 /* IrregularLabel.m */; };
 		27D100AB1C64D32C00A9FFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D100AA1C64D32C00A9FFC4 /* main.m */; };
 		27D100AE1C64D32C00A9FFC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D100AD1C64D32C00A9FFC4 /* AppDelegate.m */; };
 		27D100B11C64D32C00A9FFC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D100B01C64D32C00A9FFC4 /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		2724DC8820B7AAF300B92542 /* FitLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitLabel.m; sourceTree = "<group>"; };
 		2724DC8A20B7AE0F00B92542 /* EdgeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EdgeLabel.h; sourceTree = "<group>"; };
 		2724DC8B20B7AE0F00B92542 /* EdgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdgeLabel.m; sourceTree = "<group>"; };
+		2724DD9720CE1B0000B92542 /* IrregularLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IrregularLabel.h; sourceTree = "<group>"; };
+		2724DD9820CE1B0000B92542 /* IrregularLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IrregularLabel.m; sourceTree = "<group>"; };
 		27D100A61C64D32C00A9FFC4 /* UILabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D100AA1C64D32C00A9FFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27D100AC1C64D32C00A9FFC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				2724DC8520B7A91F00B92542 /* ImageLabel.m */,
 				2724DC8720B7AAF300B92542 /* FitLabel.h */,
 				2724DC8820B7AAF300B92542 /* FitLabel.m */,
+				2724DD9720CE1B0000B92542 /* IrregularLabel.h */,
+				2724DD9820CE1B0000B92542 /* IrregularLabel.m */,
 				27D100B21C64D32C00A9FFC4 /* Main.storyboard */,
 				27D100B51C64D32C00A9FFC4 /* Assets.xcassets */,
 				27D100B71C64D32C00A9FFC4 /* LaunchScreen.storyboard */,
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2724DD9920CE1B0000B92542 /* IrregularLabel.m in Sources */,
 				2724DC8620B7A91F00B92542 /* ImageLabel.m in Sources */,
 				27D100B11C64D32C00A9FFC4 /* ViewController.m in Sources */,
 				2724DC8C20B7AE0F00B92542 /* EdgeLabel.m in Sources */,

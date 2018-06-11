@@ -10,6 +10,7 @@
 #import "ImageLabel.h"
 #import "FitLabel.h"
 #import "EdgeLabel.h"
+#import "IrregularLabel.h"
 
 @interface ViewController ()
 
@@ -26,22 +27,6 @@
      * label4       label中的文字添加阴影
      * label5       label上字体颜色不同
      */
-    
-    /** label中添加图片*/
-    UIImage *image = [UIImage imageNamed:@"banner.png"];
-    ImageLabel *iLbl = [[ImageLabel alloc] initWithFrame:CGRectMake(20, 20, 200, 100)];
-    iLbl.image = image;
-    [self.view addSubview:iLbl];
-    /** label高度自适应*/
-    NSString *str = @"ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;";
-    
-    FitLabel *label2 = [[FitLabel alloc] initWithFrame:CGRectMake(20, 120, 300, 10)];
-    label2.backgroundColor = [UIColor cyanColor];
-    label2.font = [UIFont systemFontOfSize:18];
-    label2.text = str;
-    
-    [self.view addSubview:label2];
-    
     
     /** 给label的文字添加下划线*/
     UILabel *label3 = [[UILabel alloc] initWithFrame:CGRectMake(20, 250, self.view.frame.size.width-40, 50)];
@@ -94,6 +79,41 @@
     //  } UIBaselineAdjustment;
     label.enabled = YES;   //默认为YES //只是决定了Label的绘制方式，将它设置为NO将会使文本变暗，表示它没有激活，这时向它设置颜色值是无效的。
     
+    [self cIrregularLabel];
+    
+    
+}
+
+- (void)cIrregularLabel {
+    IrregularLabel *iLabel = [[IrregularLabel alloc] initWithFrame:CGRectMake(20, 600, 200, 40)];
+    [self.view addSubview:iLabel];
+    iLabel.text = @"这是一个不规则label";
+    iLabel.textAlignment = NSTextAlignmentCenter;
+    iLabel.backgroundColor = [UIColor redColor];
+    iLabel.textColor = [UIColor whiteColor];
+}
+
+- (void)cFitLabel {
+    /** label高度自适应*/
+    NSString *str = @"ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;ljs;dljdl;fjskdhjkld;dksdjl;";
+    
+    FitLabel *label2 = [[FitLabel alloc] initWithFrame:CGRectMake(20, 120, 300, 10)];
+    label2.backgroundColor = [UIColor cyanColor];
+    label2.font = [UIFont systemFontOfSize:18];
+    label2.text = str;
+    
+    [self.view addSubview:label2];
+}
+
+- (void)cImageLabel {
+    /** label中添加图片*/
+    UIImage *image = [UIImage imageNamed:@"banner.png"];
+    ImageLabel *iLbl = [[ImageLabel alloc] initWithFrame:CGRectMake(20, 20, 200, 100)];
+    iLbl.image = image;
+    [self.view addSubview:iLbl];
+}
+
+- (void)cEdgeLabel {
     EdgeLabel *eLbl = [[EdgeLabel alloc] initWithFrame:CGRectMake(20, 600, 100, 30)];
     eLbl.text = @"xiaojd";
     eLbl.backgroundColor = [UIColor cyanColor];
