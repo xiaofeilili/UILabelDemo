@@ -12,6 +12,7 @@
 		2724DC8920B7AAF300B92542 /* FitLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724DC8820B7AAF300B92542 /* FitLabel.m */; };
 		2724DC8C20B7AE0F00B92542 /* EdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724DC8B20B7AE0F00B92542 /* EdgeLabel.m */; };
 		2724DD9920CE1B0000B92542 /* IrregularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724DD9820CE1B0000B92542 /* IrregularLabel.m */; };
+		2782F88C20F5DA0800737C98 /* UILabel+ChangeLineSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2782F88B20F5DA0800737C98 /* UILabel+ChangeLineSpace.m */; };
 		27D100AB1C64D32C00A9FFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D100AA1C64D32C00A9FFC4 /* main.m */; };
 		27D100AE1C64D32C00A9FFC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D100AD1C64D32C00A9FFC4 /* AppDelegate.m */; };
 		27D100B11C64D32C00A9FFC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D100B01C64D32C00A9FFC4 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 		2724DC8B20B7AE0F00B92542 /* EdgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdgeLabel.m; sourceTree = "<group>"; };
 		2724DD9720CE1B0000B92542 /* IrregularLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IrregularLabel.h; sourceTree = "<group>"; };
 		2724DD9820CE1B0000B92542 /* IrregularLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IrregularLabel.m; sourceTree = "<group>"; };
+		2782F88A20F5DA0700737C98 /* UILabel+ChangeLineSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChangeLineSpace.h"; sourceTree = "<group>"; };
+		2782F88B20F5DA0800737C98 /* UILabel+ChangeLineSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpace.m"; sourceTree = "<group>"; };
 		27D100A61C64D32C00A9FFC4 /* UILabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D100AA1C64D32C00A9FFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27D100AC1C64D32C00A9FFC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				2724DC8820B7AAF300B92542 /* FitLabel.m */,
 				2724DD9720CE1B0000B92542 /* IrregularLabel.h */,
 				2724DD9820CE1B0000B92542 /* IrregularLabel.m */,
+				2782F88A20F5DA0700737C98 /* UILabel+ChangeLineSpace.h */,
+				2782F88B20F5DA0800737C98 /* UILabel+ChangeLineSpace.m */,
 				27D100B21C64D32C00A9FFC4 /* Main.storyboard */,
 				27D100B51C64D32C00A9FFC4 /* Assets.xcassets */,
 				27D100B71C64D32C00A9FFC4 /* LaunchScreen.storyboard */,
@@ -308,6 +313,7 @@
 				2724DC8C20B7AE0F00B92542 /* EdgeLabel.m in Sources */,
 				2724DC8920B7AAF300B92542 /* FitLabel.m in Sources */,
 				27D100AE1C64D32C00A9FFC4 /* AppDelegate.m in Sources */,
+				2782F88C20F5DA0800737C98 /* UILabel+ChangeLineSpace.m in Sources */,
 				2724DC8320B7A8C500B92542 /* BorderLabel.m in Sources */,
 				27D100AB1C64D32C00A9FFC4 /* main.m in Sources */,
 			);
